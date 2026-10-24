@@ -1,0 +1,60 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #0B0B0B;
+  border-bottom: 1px solid #292929;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  color: #C9101C;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #F02B3A;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  color: #D6D6D6;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Red underline on hover */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 0;
+  height: 2px;
+  background: #C9101C;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #FFFFFF;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
